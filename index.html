@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    
+    <div class="password-box">
+      <input type="text" id="password" readonly placeholder="Your password">
+      <button id="copy-btn" class="copy-btn">
+        <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        <svg id="check-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </div>
+
+    <div class="settings">
+      <div class="setting">
+        <label for="length">Password Length: <span id="length-value">12</span></label>
+        <input type="range" id="length" min="6" max="32" value="12">
+      </div>
+
+      <div class="setting">
+        <label>
+          <input type="checkbox" id="uppercase" checked>
+          Include Uppercase Letters
+        </label>
+      </div>
+
+      <div class="setting">
+        <label>
+          <input type="checkbox" id="lowercase" checked>
+          Include Lowercase Letters
+        </label>
+      </div>
+
+      <div class="setting">
+        <label>
+          <input type="checkbox" id="numbers" checked>
+          Include Numbers
+        </label>
+      </div>
+
+      <div class="setting">
+        <label>
+          <input type="checkbox" id="symbols" checked>
+          Include Symbols
+        </label>
+      </div>
+    </div>
+
+    <button id="generate" class="generate-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
+      Generate Password
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
