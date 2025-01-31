@@ -22,7 +22,7 @@ To run the Password Generator locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/schakibb/Password-Generator-.git
    ```
 
 2. **Navigate to the Project Directory**:
